@@ -1,40 +1,100 @@
+/* Home.css */
+
+/* Home Container */
 .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
   }
   
+  /* Overlay */
   .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
   
+  /* Content Layout */
   .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    color: white;
+  }
+  
+  /* Left Side: Image & Text */
+  .left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   
+  .left-side h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+  }
+  
+  .left-image {
+    width: 200px; /* Adjust size */
+    margin-bottom: 10px;
+  }
+  
+  /* Right Side: Login & Signup */
+  .right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .auth-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    background-color:gainsboro;
+  }
+  
+  /* Paragraph Text */
+  .auth-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color:rebeccapurple;
+  }
+  
+  /* Buttons */
   .btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
+    background-color: #4caf50;
     color: white;
-    background: #007bff;
+    padding: 12px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background 0.3s ease;
+    font-size: 16px;
+    border-radius: 4px;
+    margin: 10px 0;
+    display: inline-block;
+    transition: background-color 0.3s ease;
   }
   
   .btn:hover {
-    background: #0056b3;
+    background-color: #45a049;
+  }
+  
+  .btn:active {
+    background-color: #3e8e41;
   }
   
